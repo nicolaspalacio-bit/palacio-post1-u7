@@ -54,4 +54,14 @@ public class MultaController {
     public Multa pagarEnVentanilla(@PathVariable Long id) {
         return multaService.pagarEnVentanilla(id);
     }
+
+    /**
+     * Canal de pago en linea (Parte 2). El Controller no cambia si la
+     * pasarela activa es PagosUDES o Wompi: esa decision vive por completo
+     * detras de {@code MultaService} y de {@code PasarelaPagoPort}.
+     */
+    @PostMapping("/{id}/pagar-en-linea")
+    public Multa pagarEnLinea(@PathVariable Long id) {
+        return multaService.pagarConPasarela(id);
+    }
 }
