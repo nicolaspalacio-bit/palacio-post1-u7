@@ -291,6 +291,21 @@ la complejidad cognitiva de mantener `domain/` e `infrastructure/`
 separados, exactamente la señal de sobre-ingeniería que advierte la propia
 unidad.
 
+
+## Evidencia de pruebas
+
+![Listado](docs/01-listado.png)
+![Crear multa 201](docs/02-crear-201.png)
+![Límite de multas 409](docs/03-limite-409.png)
+![Validación 400](docs/04-validacion-400.png)
+![No existe 404](docs/05-no-existe-404.png)
+![Pago ventanilla 200](docs/06-ventanilla-200.png)
+![Pago ventanilla repetido 409](docs/07-ventanilla-409.png)
+![Pago en línea PagosUDES 402](docs/08-pagosudes-402.png)
+![Multa ya pagada 409](docs/09-ya-pagada-409.png)
+![Pago en línea Wompi 402](docs/10-wompi-402.png)
+
+
 ## Herramientas utilizadas
 
 - Java 17, Spring Boot 3.3.4, Spring Web, Spring Data JPA, Spring Validation
